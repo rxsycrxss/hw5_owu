@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw 5.1</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border-top: 30px solid purple;
+            border-right: 20px solid #36ff36;
+            border-bottom: 10px solid #dfe608;
+            border-left: 5px solid #938c8c;
+            animation: preloader 1s linear infinite alternate;
+        }
+        @keyframes preloader {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(-360deg) scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="circle"></div>
+</body>
+</html>
